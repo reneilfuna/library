@@ -25,3 +25,7 @@ addBookToLibrary("East of Eden", "John Steinbeck", 640, 0)
 addBookToLibrary("Why We Sleep", "Matthew Walker", 368, 1)
 addBookToLibrary("Still Life", "Sarah Winman", 448, 1)
 console.log(theLibrary)
+
+for (let i = 0; i < theLibrary.length; i++){
+   console.log(theLibrary[i]);
+}

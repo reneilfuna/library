@@ -13,7 +13,7 @@ body {
    display: grid;
 
    grid-template-columns: 1fr 3fr;
-   grid-template-rows: 1fr 8fr;
+   grid-template-rows: 1fr 4fr;
 
    height: 100%;
 }
@@ -23,10 +23,22 @@ body {
 } */
 
 #titlebar {
+   align-self: center;
+
+   background-color: #4C301E;
+   color: #A05B0B;
+
    display: grid;
+
+   font-family: 'MinecraftiaRegular';
+   font-size: 8vw;
 
    grid-column: 1 / 3;
    grid-row: 1 / 2;
+
+   justify-content: center;
+
+   margin: 2%;
 }
 
 #container {

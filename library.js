@@ -27,5 +27,12 @@ addBookToLibrary("Still Life", "Sarah Winman", 448, 1)
 console.log(theLibrary)
 
 for (let i = 0; i < theLibrary.length; i++){
-   console.log(theLibrary[i]);
+   console.log(theLibrary[i], `I am the ${i+1}th book`);
 }
+
+// Build function to display a grid of all the book elements within the container
+
+// When page loads, access array of books
+// Iterate through array, accessing metadata of book
+// If a book exists, read the metadata and call function to display the book
+// create listener function to adjust display if sidebar tabs are clicked, i.e. read/unread

@@ -41,13 +41,13 @@ body {
    margin: 2%;
 }
 
-#container {
+#bookshelf {
    background-color: #4C301E;
 
    grid-column: 2 / 3;
    grid-row: 2 / 3;
 
-   margin-block: 2.5%;
+   margin-block: 2%;
    margin-inline: 2.5%;
 }
 

@@ -35,7 +35,9 @@ for (let i = 0; i < theLibrary.length; i++){
 function showBooks() {
    // Clear display before building grid
    const container = document.getElementById("bookshelf");
-   container.replaceChildren();
+   if (container.hasChildNodes()){
+      container.replaceChildren();
+   }
    // Iterate through array, accessing metadata of book
    // If a book exists, 
    theLibrary.forEach( book => {
@@ -54,11 +56,12 @@ function showBooks() {
       bookSlot.appendChild(author);
       bookSlot.appendChild(pages);
 
-      document.appendChild(bookSlot);
+      container.appendChild(bookSlot);
    })
       // read the metadata and 
       // call function to display the book
 }
 
+// showBooks();
 
 // create listener function to adjust display if sidebar tabs are clicked, i.e. read/unread

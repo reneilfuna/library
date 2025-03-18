@@ -38,6 +38,24 @@ function showBooks() {
    container.replaceChildren();
    // Iterate through array, accessing metadata of book
    // If a book exists, 
+   theLibrary.forEach( book => {
+      const bookSlot = document.createElement("div");
+      bookSlot.classList.add("aBook")
+      
+      const title = document.createElement("div");
+      title.textContent = book.title;
+
+      const author = document.createElement("div");
+      author.textContent = book.author;
+
+      const pages = document.createElement("div");
+      pages.textContent = book.pages;
+      bookSlot.appendChild(title);
+      bookSlot.appendChild(author);
+      bookSlot.appendChild(pages);
+
+      document.appendChild(bookSlot);
+   })
       // read the metadata and 
       // call function to display the book
 }

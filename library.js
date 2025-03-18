@@ -39,29 +39,32 @@ function showBooks() {
       container.replaceChildren();
    }
    // Iterate through array, accessing metadata of book
-   // If a book exists, 
+   // If a book exists, read the metadata and call function to display the book
    theLibrary.forEach( book => {
       const bookSlot = document.createElement("div");
       bookSlot.classList.add("aBook")
       
       const title = document.createElement("div");
+      title.classList.add("title")
       title.textContent = book.title;
 
       const author = document.createElement("div");
+      author.classList.add("author")
       author.textContent = book.author;
 
       const pages = document.createElement("div");
+      pages.classList.add("pages")
       pages.textContent = book.pages;
+      
       bookSlot.appendChild(title);
       bookSlot.appendChild(author);
       bookSlot.appendChild(pages);
 
       container.appendChild(bookSlot);
    })
-      // read the metadata and 
-      // call function to display the book
+      
 }
 
-// showBooks();
+showBooks();
 
 // create listener function to adjust display if sidebar tabs are clicked, i.e. read/unread

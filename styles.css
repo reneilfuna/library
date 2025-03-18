@@ -44,11 +44,47 @@ body {
 #bookshelf {
    background-color: #4C301E;
 
+   display: grid;
+
    grid-column: 2 / 3;
    grid-row: 2 / 3;
 
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+
    margin-block: 2%;
    margin-inline: 2.5%;
+}
+
+.aBook{
+   background-color: #432919;
+
+   display: grid;
+
+   align-items: center;
+   justify-content: center;
+
+   margin: 20px;
+   
+   text-align: center;
+}
+
+.aBook > div {
+   background-color: #432919;
+   color: #A05B0B;
+}
+
+.author {
+   position: relative;
+   top: 100px;
+}
+
+.pages {
+   position: relative;
+   top: 50px;
+   left: 30px;
+
+   text-align: right;
 }
 
 #sidebar {

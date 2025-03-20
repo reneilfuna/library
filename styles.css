@@ -95,8 +95,17 @@ body {
    grid-column: 1 / 2;
    grid-row: 2 / 3;
 
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 2.5fr;
+
    margin-block: 6%;
    margin-inline: 8%;
+}
+
+#tabs {
+   display: grid;
+
+   grid-template-rows: 1 / 2;
 }
 
 .tab{
@@ -104,5 +113,6 @@ body {
 
    display: grid;
 
+   align-items: center;
    justify-content: center;
 }

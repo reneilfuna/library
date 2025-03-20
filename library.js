@@ -67,10 +67,17 @@ function showBooks() {
 
 // Reference button
 const bookBtn = document.getElementById("newBook");
+const modal  = document.getElementById("modal");
+const closeBtn = document.getElementById("close");
 
 bookBtn.addEventListener("click", (event) => {
    // Fill function
    // Call modal/dialog
+   modal.showModal();
+})
+
+closeBtn.addEventListener("click", (event) => {
+   modal.close();
 })
 
 showBooks();

@@ -71,9 +71,7 @@ const modal  = document.getElementById("modal");
 const closeBtn = document.getElementById("close");
 
 bookBtn.addEventListener("click", (event) => {
-   // Fill function
-   // Call modal/dialog
-   modal.showModal();
+   modal.showModal()
 })
 
 closeBtn.addEventListener("click", (event) => {

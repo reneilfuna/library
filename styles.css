@@ -46,7 +46,7 @@ body {
    grid-column: 2 / 3;
    grid-row: 2 / 3;
 
-   grid-template-columns: repeat(4, 1fr);
+   grid-template-columns: repeat(5, 1fr);
    grid-template-rows: repeat(2, 1fr);
 
    margin-block: 2%;
@@ -81,7 +81,7 @@ body {
 
 .pages {
    position: relative;
-   top: 50px;
+   top: 46px;
    left: 2%;
 
    text-align: right;
@@ -136,7 +136,16 @@ body {
 }
 
 #newBook {
+   color: #A05B0B;
+
    height: 15%;
 
    align-content: end;
+}
+
+#modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

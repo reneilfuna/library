@@ -144,8 +144,30 @@ body {
 }
 
 #modal {
+   /* Centres the modal */
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+   /* Lengths */
+   height: 50%;
+   width: 50%;
+}
+
+#modalContent {
+   display: grid;
+
+   height: 100%;
+
+   grid-template-columns: 1fr;
+   grid-template-rows: 3fr 1fr;
+}
+
+#bookEntry {
+   grid-row: 1 / 2;
+}
+
+#close {
+   grid-row: 2 / 3;
 }

@@ -27,26 +27,30 @@
       </div>
 
       <dialog id="modal">
-         <form>
-            <fieldset>
-               <div class="formEntry">
-                  <label for="title">Book Title</label>
-                  <input type="text" name="book_name" id="book_name">
-               </div>
+         <div id="modalContent">
+            <form id="bookEntry">
+               <fieldset>
+                  <div class="formEntry">
+                     <label for="title">Book Title</label>
+                     <input type="text" name="book_name" id="book_name">
+                  </div>
 
-               <div class="formEntry">
-                  <label for="author">Book Author</label>
-                  <input type="text" name="author" id="author">
-               </div>
+                  <div class="formEntry">
+                     <label for="author">Book Author</label>
+                     <input type="text" name="author" id="author">
+                  </div>
 
-               <div class="formEntry">
-                  <label for="pages">Number of Pages</label>
-                  <input type="text" name="pages" id="pages">
-               </div>
+                  <div class="formEntry">
+                     <label for="pages">Number of Pages</label>
+                     <input type="text" name="pages" id="pages">
+                  </div>
 
-            </fieldset>
-         </form>
-         <button id="close">close</button>
+               </fieldset>
+            </form>
+            <div class="btnWrapper">
+               <button id="close">close</button>
+            </div>
+         </div>
       </dialog>
    </body>
 </html>

@@ -164,8 +164,19 @@ body {
    grid-template-rows: 3fr 1fr;
 }
 
-#bookEntry {
+#bookForm {
+   display: flex;
+
+   justify-content: space-between;
+
    grid-row: 1 / 2;
+}
+
+#bookDetails {
+   display: flex;
+   flex-grow: 1;
+
+   padding: 20px;
 }
 
 #close {

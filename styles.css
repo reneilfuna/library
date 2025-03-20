@@ -61,7 +61,10 @@ body {
    align-items: center;
    justify-content: center;
 
+   grid-template-columns: 1fr;
+
    margin: 20px;
+   padding-inline: 5%;
    
    text-align: center;
 }
@@ -79,7 +82,7 @@ body {
 .pages {
    position: relative;
    top: 50px;
-   left: 10px;
+   left: 2%;
 
    text-align: right;
 }

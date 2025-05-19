@@ -55,6 +55,7 @@ body {
 
 .aBook{
    background-color: #432919;
+   border:3px solid #3e1c00;
 
    display: grid;
 

@@ -76,7 +76,7 @@ bookBtn.addEventListener("click", (event) => {
 })
 
 closeBtn.addEventListener("click", (event) => {
-   modal.close();
+   modal.close()
 })
 
 showBooks();

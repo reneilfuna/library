@@ -65,6 +65,20 @@ function showBooks() {
       
 }
 
+
+// Reference button
+const bookBtn = document.getElementById("newBook");
+const modal = document.getElementById("modal");
+const closeBtn = document.getElementById("close");
+
+bookBtn.addEventListener("click", (event) => {
+   modal.showModal()
+})
+
+closeBtn.addEventListener("click", (event) => {
+   modal.close();
+})
+
 showBooks();
 
 // create listener function to adjust display if sidebar tabs are clicked, i.e. read/unread

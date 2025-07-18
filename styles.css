@@ -166,9 +166,6 @@ body {
 }
 
 #bookForm {
-   display: flex;
-
-   justify-content: space-between;
 
    grid-row: 1 / 2;
 }

@@ -65,10 +65,16 @@ function showBooks() {
       
 }
 
+<<<<<<< HEAD
 
 // Reference button
 const bookBtn = document.getElementById("newBook");
 const modal = document.getElementById("modal");
+=======
+// Reference button
+const bookBtn = document.getElementById("newBook");
+const modal  = document.getElementById("modal");
+>>>>>>> newBook
 const closeBtn = document.getElementById("close");
 
 bookBtn.addEventListener("click", (event) => {
@@ -76,7 +82,11 @@ bookBtn.addEventListener("click", (event) => {
 })
 
 closeBtn.addEventListener("click", (event) => {
+<<<<<<< HEAD
    modal.close()
+=======
+   modal.close();
+>>>>>>> newBook
 })
 
 showBooks();

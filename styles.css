@@ -46,7 +46,7 @@ body {
    grid-column: 2 / 3;
    grid-row: 2 / 3;
 
-   grid-template-columns: repeat(4, 1fr);
+   grid-template-columns: repeat(5, 1fr);
    grid-template-rows: repeat(2, 1fr);
 
    margin-block: 2%;
@@ -55,6 +55,7 @@ body {
 
 .aBook{
    background-color: #432919;
+   border:3px solid #3e1c00;
 
    display: grid;
 
@@ -81,7 +82,7 @@ body {
 
 .pages {
    position: relative;
-   top: 50px;
+   top: 46px;
    left: 2%;
 
    text-align: right;
@@ -106,13 +107,81 @@ body {
    display: grid;
 
    grid-template-rows: 1 / 2;
+
 }
 
 .tab{
    background-color: #4C301E;
 
+   border: #432919 1px solid;
+
    display: grid;
 
    align-items: center;
    justify-content: center;
+}
+
+#buttonContainer {
+   background-color: #4C301E;
+
+   border: #432919 1px solid;
+
+   display: grid;
+
+   grid-row: 2 / 3;
+
+   padding-block: 10%;
+   padding-inline: 10%;
+
+   align-items: flex-end;
+}
+
+#newBook {
+   color: #A05B0B;
+
+   height: 15%;
+
+   align-content: end;
+}
+
+#modal {
+   /* Centres the modal */
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+   /* Lengths */
+   height: 50%;
+   width: 50%;
+}
+
+#modalContent {
+   display: grid;
+
+   height: 100%;
+
+   grid-template-columns: 1fr;
+   grid-template-rows: 3fr 1fr;
+}
+
+#bookForm {
+   display: flex;
+
+   justify-content: space-between;
+
+   grid-row: 1 / 2;
+}
+
+#bookDetails {
+   border: 1px solid black;
+
+   display: flex;
+   flex-grow: 1;
+
+   padding: 20px;
+}
+
+#close {
+   grid-row: 2 / 3;
 }
